@@ -170,7 +170,7 @@ def getProgressWidget():
   progressWidget.setWindowIcon(QIcon(join(addon_path, 'icon.png')))
   progressWidget.setWindowTitle("Running Mass Retirement...")
   bar = QProgressBar(progressWidget)
-  if isMac:
+  if is_mac:
     bar.setFixedSize(380, 50)
   else:
     bar.setFixedSize(390, 50)
